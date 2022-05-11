@@ -1,9 +1,11 @@
+const gameContainer = document.getElementById("gameContainer");
+const gridContainer = ["", "", "", ""];
 
-const gameContainer = document.getElementById ("gameContainer");
-const gridContainer = ['','','',''];
+let index = 0;
+gridContainer.map(function () {
+  index++;
+  let rowContainer = document.createElement("div");
+  rowContainer.setAttribute("id", "baloon" + index);
 
-gridContainer.map(function(){
-
-let rowContainer = document.createElement("div")
-gameContainer.appendChild(rowContainer);
+  gameContainer.appendChild(rowContainer);
 });
