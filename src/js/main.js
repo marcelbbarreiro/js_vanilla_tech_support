@@ -1,11 +1,21 @@
 const gameContainer = document.getElementById("gameContainer");
-const gridContainer = ["", "", "", ""];
+const gridContainer = [
+    ["", "", "", ""],
+    ["", "", "", ""],
+    ["", "", "", ""]
+];
 
 let index = 0;
-gridContainer.map(function () {
-  index++;
-  let rowContainer = document.createElement("div");
-  rowContainer.setAttribute("id", "baloon" + index);
+gridContainer.map(function (row) {
+    let rowContainer = document.createElement("div");
+    rowContainer.setAttribute("id", "balloon" + index++);
+    rowContainer.classList.add("purple-balloon");
+    console.log("hola");
 
-  gameContainer.appendChild(rowContainer);
+    row.map(function () {
+
+    });
+
+
+    gameContainer.appendChild(rowContainer);
 });

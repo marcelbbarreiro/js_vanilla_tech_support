@@ -1,0 +1,12 @@
+.game-container--flex {
+    display: flex;
+}
+
+.purple-balloon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: purple;
+}
