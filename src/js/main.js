@@ -39,8 +39,14 @@ function randomColor() {
 
 gameContainer.addEventListener("click", getBalloonId);
 function getBalloonId(e) {
+  const balloonElement = e.target
   //console.log(e.target.id)
   //console.log(e.currentTarget.id)
   //console.log(e.target.dataset.balloon)
   //console.log(e.target.classList)
+  if (balloonElement.classList.contains("red-balloon")){
+    balloonElement.classList.add("is-hidden");
+  }else if (balloonElement.classList.contains("blue-balloon")){
+      balloonElement.classList.add("is-hidden");
+  }
 }
