@@ -1,15 +1,24 @@
-.game-container--flex {}
+.game-container--flex {
+}
 
 .balloons-container {
-    display: flex;
-    margin: 0.1rem;
-    padding: 1rem;
+  display: flex;
+  margin: 0.1rem;
+  padding: 1rem;
 }
 
 .red-balloon {
-    width: 3rem;
-    height: 3rem;
-    margin: 0.25rem;
-    border-radius: 50%;
-    background-color: red;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.blue-balloon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+  border-radius: 50%;
+  background-color: blue;
 }
